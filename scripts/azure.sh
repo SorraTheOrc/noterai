@@ -1,9 +1,8 @@
 #!/bin/bash
 
 # Includes
-DIR="${BASH_SOURCE%/*}"
-if [[ ! -d "$DIR" ]]; then DIR="$PWD"; fi
-source "$DIR/common/utility.sh"
+SCRIPTS_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+source "$SCRIPTS_DIR/common/utility.sh"
 
 function installAzureCLI() 
 {

@@ -1,2 +1,6 @@
-captionr
-microsoft.asc.gpg
+# VS Code
+.vscode/
+
+# Node
+package-lock.json
+node_modules/

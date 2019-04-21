@@ -29,28 +29,9 @@ With modern Speech to Text services it is possible to have a computer take those
 Useful features might include:
 
   * TODO: Record audio and send it to OneNote
-  * IN PROGRESS: Perform speech to text conversion
+  * IN PROGRESS: Perform [speech to text recording](src/SpeechToText)
   * TODO: Perform near real-time speech to text conversion
   * TODO: Manualy annotate a recording with labels in real-time or on play-back
-
-#### Speech to Text Recording
-
-Using Azure Cognitive Services, specifically the speech services, we can easily convert speech to text.
-
-  * IN PROGRESS: Live conversion of speech to on-screen text
-  * TODO: Record audio to a file
-  * TODO: Online access to recordings
-  * TODO: Record converted text online and display in a web accessible timeline
-  * TODO: Push converted text to OneNote
-  * TODO: Single click annotation of live recording with commonly used tags
-  * TODO: One-click recording of a meeting/lecture from within Outlook
-  * TODO: Access to recordings/notes from Outlook
-
-##### IN PROGRESS: Live conversion of speech to on-screen text
-
-Anthony Chu has a great demo project called [CaptionR](https://github.com/anthonychu/captionr) that uses Cognitive Services to do live captioning and translation. Currently our implementation of speech to text uses his code (just the Speech to Text part). It's actually pretty simple. There's a Vue.js front-end that talks to Azure Cognitive Speech Services on the back-end. This app listens for the audio, sends it to the Speech Services and displays the response in the browser.
-
-REFACTOR: The source for this can be found in the `src/SpeechToText` folder (currently we reuse CaptionR's full source code)
 
 ## Running NoterAI
 
